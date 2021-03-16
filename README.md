@@ -1,4 +1,4 @@
-# MUPlab_and_AssemblyLanguageHelp
+# Microprocessor Programming and Interfacing - BITS Goa
 
 A list of all the programs and resources for MuP 
 
