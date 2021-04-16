@@ -9,13 +9,13 @@ handle dw ?
 fileData db 107 dup('$')
 dataCnt equ 106
 
-blue db 01h ; 0000 0001
-green db 02h ; 0000 0010
-cyan db 03h ; 0000 0011
-red db 04h ; 0000 0100
-magenta db 05h ; 0000 0101
-brown db 06h ; 0000 0110
-white db 07h ; 0000 0111
+blue equ 01h ; 0000 0001
+green equ 02h ; 0000 0010
+cyan equ 03h ; 0000 0011
+red equ 04h ; 0000 0100
+magenta equ 05h ; 0000 0101
+brown equ 06h ; 0000 0110
+white equ 07h ; 0000 0111
 
 .code
 .startup
