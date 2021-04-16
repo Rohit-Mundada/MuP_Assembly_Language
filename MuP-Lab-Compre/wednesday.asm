@@ -57,7 +57,7 @@ col db 0
     ; get current display mode
     mov ah, 0fh
     int 10h
-    mov currMode, ah
+    mov currMode, al
 
     ; set text mode 3
     mov ah, 00h
