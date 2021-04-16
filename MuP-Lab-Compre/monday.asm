@@ -108,7 +108,7 @@ x7: cmp al, '@'
     ; restoring original mode
 x8: mov al, currMode
     mov ah, 00h
-    int 21h
+    int 10h
 .exit
 end
 

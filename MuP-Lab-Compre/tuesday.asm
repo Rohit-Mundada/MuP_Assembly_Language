@@ -85,6 +85,7 @@ x3:	mov bh,[di]
     inc dl
     mov bl,greenNb
     lea di,dat1
+    mov bp, 0
 x4:	mov ah,02h
     int 10h
     
@@ -99,9 +100,10 @@ x4:	mov ah,02h
     mov cx,1
     int 10h
     
-    ; stpre character in memory
+    ; store character in memory
     mov [di],al
     inc di
+    inc bp
     inc dl
     jmp x4
     
@@ -112,7 +114,7 @@ x5: mov ah,3dh
     int 21h		
 
     ; get number of bytes to write
-    mov cx,di
+    mov cx,bp
      
     ; write to file 
     mov ah,40h

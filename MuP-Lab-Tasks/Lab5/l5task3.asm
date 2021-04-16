@@ -43,7 +43,7 @@ x3: mov ah, 07h
     ; restoring original mode
     mov al, currMode
     mov ah, 00h
-    int 21h
+    int 10h
 .exit
 end
 

@@ -50,7 +50,7 @@ x2: mov ah, 08h
     ; restoring original mode
     mov al, currMode
     mov ah, 00h
-    int 21h
+    int 10h
 .exit
 end
 
